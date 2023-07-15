@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buttons</title>
+	<style>
+		.one{
+			background-color: yellow;
+      padding: 10px 5px;
+		}
+		
+	</style>
+</head>
+<body>
+
+  <button class="one" 
+  onclick="console.log(`Cart Quantity : ${cart}`)"
+  
+  >Show Quantity</button>
+
+  <button class="one" 
+  
+  onclick="cart = cart + 1;
+   console.log(`Cart Quantity : ${cart}`)"
+  
+  >Add To Cart</button>
+
+  <button class="one" 
+  onclick="cart = cart + 2;
+  console.log(`Cart Quantity : ${cart}`)"
+  
+  >Add 2 More</button>
+
+  <button class="one" 
+  onclick="cart = cart + 3;
+  console.log(`Cart Quantity : ${cart}`)"
+  
+  >Add 3 More</button>
+
+  <button class="one" 
+  onclick="cart += 4;
+  console.log(`Cart Quantity : ${cart}`)"
+  
+  >Add 4 More</button>
+
+  <button class="one" 
+  onclick="cart += 5;
+  console.log(`Cart Quantity : ${cart}`)"
+  
+  >Add 5 More</button>
+
+  <br>
+
+  <button class="one" 
+  
+  onclick="cart -=  1;
+   console.log(`Cart Quantity : ${cart}`)"
+  
+  >Remove 1</button>
+
+  <button class="one" 
+  onclick="cart -= 2;
+  console.log(`Cart Quantity : ${cart}`)"
+  
+  >Remove 2 </button>
+
+  <button class="one" 
+  onclick="cart -= 3;
+  console.log(`Cart Quantity : ${cart}`)"
+  
+  >Remove 3 More</button>
+
+  <button class="one" 
+  onclick="cart = 0;
+  console.log('Cart Is Empty Now')
+  console.log(`Cart Quantity : ${cart}`)"
+  
+  >Reset Cart</button>
+	
+	<script>
+    let cart = 0;
+		console.log('cart');
+	</script>
+</html>

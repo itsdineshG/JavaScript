@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean</title>
+</head>
+<body>
+
+<script>
+  /*const hour = 25;
+
+  const name = 'DINESH';
+
+  if(hour >= 6 && hour <= 12){
+    alert (`Good Morning..! ${name}`);
+  }else if (hour >= 13 && hour <=17){
+    alert (`Good Evening..! ${name}`);
+  }else {
+    alert (`Good Night..! ${name}`);
+  }*/
+
+  /*
+  const age = 75;
+  const holiday = true;
+
+  if((age <= 6 || age >= 65) && holiday){
+    alert (`Your Age is..${age} Discount Availabe`);
+  }else {
+    alert (`Your Age is..${age} Discount NOT Availabe`);
+  }*/
+
+  /*const randomNumber = Math.random();
+  console.log(randomNumber);
+  
+  let res;
+  
+  if (randomNumber < 0.5){
+    res = 'HEADS';
+  }else{
+    res = 'TAILS';
+  }
+
+  let guess = 'HEADS';
+  if (res === guess){ //equality operator ===
+    alert('You WIN');
+  }else{
+    alert('You Lose');
+  }*/
+
+  const randomNumber = Math.random();
+  const result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+  const guess = 'heads';
+  console.log(guess === result ? 'You win!' : 'You lose!');
+</script>
+  
+  
+</body>
+</html>

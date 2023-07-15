@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <h2>Rock Paper Scissors</h2>
+  <button onclick="
+  
+  const randomNumber = Math.random();
+  //console.log(randomNumber);
+
+  let comp = '';
+
+  if(randomNumber >= 0 && randomNumber < 1/3){
+    comp = 'ROCK';
+    console.log(comp);
+  }else if(randomNumber > 1/3 && randomNumber < 2/3){
+    comp = 'PAPER';
+    console.log(comp);
+  }else if(randomNumber > 2/3 && randomNumber < 1){
+    comp = 'SCISSORS';
+    console.log(comp);
+  }
+
+  let res = '';
+
+  if(comp === 'ROCK'){
+    res = 'Tie.';
+  }else if(comp === 'PAPER'){
+    res = 'You Lose.';
+  }else if(comp === 'SCISSORS'){
+    res = 'You Win.';
+  }
+
+  alert(`You Picked Rock..... \n Computer Picks ${comp}\n RESULT: ${res}`)
+
+  ">ROCK</button>
+
+<button onclick="
+  
+const randomNumber = Math.random();
+//console.log(randomNumber);
+
+let comp = '';
+
+if(randomNumber >= 0 && randomNumber < 1/3){
+  comp = 'ROCK';
+  console.log(comp);
+}else if(randomNumber > 1/3 && randomNumber < 2/3){
+  comp = 'PAPER';
+  console.log(comp);
+}else if(randomNumber > 2/3 && randomNumber < 1){
+  comp = 'SCISSORS';
+  console.log(comp);
+}
+
+let res = '';
+
+if(comp === 'ROCK'){
+  res = 'You Win.';
+}else if(comp === 'PAPER'){
+  res = 'Tie.';
+}else if(comp === 'SCISSORS'){
+  res = 'You Lose.';
+}
+
+alert(`You Picked Paper..... \n Computer Picks ${comp}\n RESULT: ${res}`)
+
+
+">PAPER</button>
+  
+<button onclick="
+  
+const randomNumber = Math.random();
+//console.log(randomNumber);
+
+let comp = '';
+
+if(randomNumber >= 0 && randomNumber < 1/3){
+  comp = 'ROCK';
+  console.log(comp);
+}else if(randomNumber > 1/3 && randomNumber < 2/3){
+  comp = 'PAPER';
+  console.log(comp);
+}else if(randomNumber > 2/3 && randomNumber < 1){
+  comp = 'SCISSORS';
+  console.log(comp);
+}
+
+let res = '';
+
+if(comp === 'ROCK'){
+  res = 'You Lose.';
+}else if(comp === 'PAPER'){
+  res = 'You Win.';
+}else if(comp === 'SCISSORS'){
+  res = 'Tie.';
+}
+
+alert(`You Picked Scissor..... \n \n Computer Picks ${comp}\n \n RESULT: ${res}`)
+
+
+">SCISSORS</button>
+
+
+  <script>
+
+  </script>
+</body>
+</html>
