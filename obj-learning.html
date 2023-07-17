@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <!-- OBJECTS - 
+    Let us *groups* multiple values together
+    Let us *use* multiple values together
+    Makes a code more organized
+  -->
+
+  <script>
+    /* const product = { // object = {property,...};
+      name: 'Car', // property: value,...
+      cost: 500000
+    };
+
+    console.log(product);
+    product.name = 'Jeep'; // Dot Notation 
+    product.cost = 1000000;
+    product['name'] = 'Lorry'; // Bracket Notation
+    console.log(product);
+
+    product.new = 'Bus';  // to add new property
+    console.log(product);
+
+    delete product.cost; // to delete a property
+    console.log(product);
+
+
+    const pro2 = {
+      name: 'shirt',
+      ['color']: 'blue' ,
+      ['delivery-time']: '1day' //use for this,  
+    };
+
+    console.log(pro2);
+    console.log(pro2.name);
+    console.log(pro2['color']);
+
+    pro2['tax'] = 10;
+    console.log(pro2);
+
+    // Use Dot Notation as Default..
+    // Use Bracket Notation for Properties
+ */
+// Nested Objects
+    const pro3 = {
+      name: 'shirt',
+      ['color']: 'blue' ,
+      rating: {       //
+        star: 4.5,    
+        count: 88     //
+      },
+// Function inside Objects = Method 
+// console.log() - object.function = method
+      fun: function test(){
+        console.log('Function Works');
+      }
+    };
+    console.log (pro3);
+    console.log(pro3.rating.count);
+    pro3.fun(); 
+
+
+// Built-in Objects
+// console.log(), Math.random(), JSON, localStorage
+// JSON - Less Feature, But Used Universal to
+// Communicate with othe programs
+
+  console.log(JSON.stringify(pro3));
+
+/*  JSON.stringify - converts JS to JSON
+    JSON.parse     - converts JSON to JS */ 
+  </script>
+</body>
+</html>
