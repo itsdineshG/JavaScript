@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Objects</title>
+  <title>Objects - Learning</title>
 </head>
 <body>
   <!-- OBJECTS - 
@@ -12,7 +12,7 @@
     Let us *use* multiple values together
     Makes a code more organized
   -->
-
+  <h3>Objects - Learning</h3>
   <script>
     /* const product = { // object = {property,...};
       name: 'Car', // property: value,...
@@ -48,7 +48,7 @@
     // Use Dot Notation as Default..
     // Use Bracket Notation for Properties
  */
-// Nested Objects
+/*// Nested Objects
     const pro3 = {
       name: 'shirt',
       ['color']: 'blue' ,
@@ -74,8 +74,34 @@
 
   console.log(JSON.stringify(pro3));
 
-/*  JSON.stringify - converts JS to JSON
+  JSON.stringify - converts JS to JSON
     JSON.parse     - converts JSON to JS */ 
+  
+  
+// AUTO BOXING
+  console.log('hello dinesh'.length);
+  console.log('hello dinesh'.toUpperCase());
+  console.log(3.5887.toString());
+
+
+// OBJECTS copy by reference...
+// even we can change values for 'const' in OBJECTS. 
+
+const obj1 = {
+  test: 'Hello'
+};
+
+const obj2 = obj1;
+obj1.test = 'Vanakkam';
+console.log(obj1);
+console.log(obj2);
+
+const obj3 = {
+  test: 'Hello'
+};
+
+console.log(obj1 === obj2); //same ref
+console.log(obj1 === obj3); //diff ref
   </script>
 </body>
 </html>
