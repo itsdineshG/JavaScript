@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <!-- DOM - Combines JS & HTML
+  We can have HTML inside the JS and HTML = Object 
+
+
+  document - represent - Webpage
+  window   - represent - Browser
+
+-->
+  <h3>DOM - Document Object Model</h3>
+  <button>Hello</button>
+  <button class="js">Hello</button>
+  <br>
+<!-- Project Code -->
+  <p>Subscribe Our YouTube Here!</p>
+  <button onclick="subscribe();" class="js-button">Subscribe</button>
+
+<hr>
+
+<p>Shipping Calculator</p>
+<p>Order Under $40 = +$10 Shipping</p>
+<p>Order Above $40 = Free Shipping</p>
+
+<input class="js-input" type="text" placeholder="Cost of Your Order"
+onkeydown="
+if(event.key === 'Enter'){
+  calculate();
+}
+console.log(event.key);" 
+>
+<!-- event.key => Object -->
+<button onclick="calculate();">Calculate</button>
+
+<p class="js-res"></p>
+  <script>
+
+
+    /* document.body.innerHTML = 'Ennada ithu...'
+//  object.object.property(linked to webpage)
+    document.title = 'Aahaan'; */
+
+    console.log(document.title);
+    console.log(document.body); // html inside JS
+    console.log(typeof document.body);// Object
+    console.log(document.body.innerHTML); //body 
+
+// Method - Func saved inside the Object...
+
+document.querySelector('button'); 
+// Elements of page into JS, Takes 1st button.. for second use CLASS
+
+document.querySelector('button').innerHTML = 'DOM';
+// innerHTML - Inside the element
+
+document.querySelector('.js').innerHTML = 'ABCD';
+
+
+function subscribe(){
+  const buttonElement = document.querySelector('.js-button');
+  if (buttonElement.innerText === 'Subscribe'){
+    buttonElement.innerHTML = 'Subscribed';
+  } else {
+    buttonElement.innerHTML = 'Subscribe'
+  }
+}
+
+function calculate(){
+  const shippingAmount = document.querySelector('.js-input');
+
+  let cost = Number(shippingAmount.value);
+  //Number () - into number
+  // use let to change value
+  if(cost <= 40){
+    cost += 10; // Type Coercion - Strings
+    console.log(cost);
+  }
+
+  document.querySelector('.js-res').innerHTML = `Total Shipping: $${cost}`;
+}
+  </script>
+</body>
+</html>
