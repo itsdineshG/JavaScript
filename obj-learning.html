@@ -102,6 +102,29 @@ const obj3 = {
 
 console.log(obj1 === obj2); //same ref
 console.log(obj1 === obj3); //diff ref
-  </script>
+
+const obj4 = {
+  test: 'Vanakkam',
+  amt: 999
+};
+// const test = obj4.test; // var = prop name
+const {test,amt} = obj4; // destructor shortcut
+console.log(test,amt);
+console.log(amt);
+
+const obj5 = {
+  //test: test
+  test,
+  //method: function fun(){
+  //  console.log('funcion using method');
+  //}
+  method(){     //shortcut - shorthand method
+    console.log('funcion using method'); 
+  }
+};
+console.log(obj5);
+obj5.method(); // calling fun in object
+
+</script>
 </body>
 </html>
