@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+</head>
+<body>
+  <script>
+    function convertToF(celsius){
+      return (celsius*9/5)+32;
+    }
+
+    function convertToC(farh){
+      return (farh-32)*5/9;
+    }
+
+    function convertTemp(degree,unit){
+      if(unit === 'C'){
+        const res = convertToF(degree);
+        return `${res} F`;
+      }else if(unit === 'F'){
+        const res = convertToC(degree);
+        return `${res} C`;
+      }
+    }
+    console.log(convertTemp(30,'C'));
+    console.log(convertTemp(98,'F'));
+    //console.log(convertToC(88));
+    //console.log(convertToF(25));
+   
+  </script>
+</body>
+</html>
