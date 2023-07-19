@@ -66,12 +66,17 @@
     function updateCart(change){
       if(cartQuantity + change > 10){
         alert('The Cart is Full');
-      }else if (cartQuantity +change < 0){
+        return;
+      }
+      
+      if (cartQuantity +change < 0){
         alert('Cart is Empty Now');
-      } else {
+        return;
+      } 
+      
+      
         cartQuantity += change;
         console.log(`Cart quantity: ${cartQuantity}`);
-      }
     }
   </script>
   </body>

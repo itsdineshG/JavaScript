@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise - Objects</title>
+</head>
+<body>
+  <h2>Exercise - Objects</h2>
+
+  <script>
+
+    function comparePrice(project1,project2){
+      if(project1.cents < project2.cents){
+        return project1;
+      } else {
+        return project2;
+      }
+      
+    }
+
+    const project1 = {
+      product: 'Basketball',
+      cents: 2095
+    };
+
+    const project2 = {
+      product: 'Baseball',
+      cents: 295
+    };
+
+    /* console.log(project1);
+
+    project.cents += 500;
+    console.log(project);
+
+    project['delivery-days'] = '3days';
+    console.log(project);
+ */
+    
+    console.log(comparePrice(project1,project2));
+  </script>
+</body>
+</html>
