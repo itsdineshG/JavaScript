@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise - Objects</title>
+</head>
+<body>
+  <h2>Exercise - Objects</h2>
+
+  <script>
+
+    function isSameObject(project1,project2){
+      if(project1.product === project2.product && project1.cents === project2.cents){
+        return true;
+      } else
+      
+      if (project1.product === project3.product && project1.cents === project3.cents){
+        return false;
+      }
+      
+    }
+
+    const project1 = {
+      product: 'Basketball',
+      cents: 2095
+    };
+
+    const project2 = {
+      product: 'Baseball',
+      cents: 295
+    };
+
+    const project3 = {
+      product: 'Basketball',
+      cents: 2095
+    };
+
+    const project4 ={
+      product: 'Baseball',
+      cents: 295
+    };
+
+    /* console.log(project1);
+
+    project.cents += 500;
+    console.log(project);
+
+    project['delivery-days'] = '3days';
+    console.log(project);
+ */
+    
+    console.log(isSameObject(project1,project2));
+
+    console.log(isSameObject(project1,project3));
+
+    console.log(isSameObject(project2,project4));
+
+  </script>
+</body>
+</html>
