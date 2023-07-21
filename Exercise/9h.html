@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Exercise</title>
+</head>
+<body>
+  <h4>onkeyup...</h4>
+  <input type="text" onkeyup="submit();" class="js-input">
+  <p class="js-output"></p>
+
+  <script>
+    function submit(){
+      const inputElement = document.querySelector('.js-input');    
+      let num = inputElement.value;
+    console.log(inputElement.value);
+      
+  
+    document.querySelector('.js-output').innerHTML = num;
+    }
+  </script>
+</body>
+</html>
