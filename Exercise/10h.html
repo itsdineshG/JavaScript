@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    .js-res-red{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <p>Shipping Calculator</p>
+    <p>Order Under $40 = +$10 Shipping</p>
+    <p>Order Above $40 = Free Shipping</p>
+
+    <input class="js-input" type="text" placeholder="Cost of Your Order"
+    onkeydown="
+    if(event.key === 'Enter'){
+      calculate();
+    }
+    console.log(event.key);" 
+    >
+    <!-- event.key => Object -->
+    <button onclick="calculate();">Calculate</button>
+
+    <p class="js-res"></p>
+    <p class="js-res-red"></p>
+  <script>
+
+
+
+function calculate(){
+  const shippingAmount = document.querySelector('.js-input');
+
+  let cost = Number(shippingAmount.value);
+  document.querySelector('.js-res').innerHTML = '';
+  document.querySelector('.js-res-red').innerHTML = ''
+  //Number () - into number
+  // use let to change value
+  if(cost <= 0){
+    document.querySelector('.js-res-red').innerHTML = `Error: Cost Cannot be less than &0`;
+    return;
+  }
+  if(cost <= 40){
+    cost += 10; // Type Coercion - Strings
+    
+  }
+  document.querySelector('.js-res').innerHTML = `Total Shipping: $${cost}`;
+ 
+}
+  </script>
+</body>
+</html>
