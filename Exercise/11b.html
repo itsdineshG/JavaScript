@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays & Loops</title>
+</head>
+<body>
+  <script>
+    function getLastValue(array) {
+        const lastIndex = array.length - 3;
+        return array[lastIndex];
+      }
+      console.log(getLastValue([1, 20, 22, 24, 5]));
+      console.log(getLastValue(['hi', 'hello', 'hey']));
+
+
+      function getLastArrayvalue(value){
+        let index = value.length - 3;
+        return value[index];
+      }
+      console.log(getLastArrayvalue([true, false, NaN, undefined]));
+      console.log(getLastArrayvalue([4,4,3,4]));
+
+  </script>
+  
+</body>
+</html>
