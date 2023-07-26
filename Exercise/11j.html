@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays & Loops</title>
+</head>
+<body>
+  Array using loop
+  <script>
+    function addArrays(array1, array2){
+      const res = [];
+      
+      for (let i = 0; i < array1.length && array2.length; i++ ){
+        res.push(array1[i] + array2[i]);    
+      }
+      return res;
+    }
+    console.log(addArrays([5,8,9],[1,5,2]));
+    console.log(addArrays([5.8,8.55,900.02,5],[0.3,0.5,0.9]));
+    console.log(addArrays([5*2,8**2,9*-66],[2,2,2,2]));
+  </script>
+  
+</body>
+</html>

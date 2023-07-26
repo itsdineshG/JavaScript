@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays & Loops</title>
+</head>
+<body>
+  Array using loop
+  <script>
+
+    function addOne(array) {
+      const result = [];
+
+      for (let i = 0; i < array.length; i++) {
+        result.push(array[i] +1 );
+      }
+
+      return result;
+    }
+
+    console.log(addOne([1, 2, 3]));
+    console.log(addOne([-2, -1, 0, 99]));
+
+    
+   
+    function mulFive(array5){
+      const res = [];
+      for(let i=0; i < array5.length; i++){
+        res.push(array5[i] * 5);
+      }
+        return res;
+    }
+
+    console.log(mulFive([5,8,-6,2,66]));
+  </script>
+  
+</body>
+</html>
