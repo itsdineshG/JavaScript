@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array n Loops</title>
+</head>
+<body>
+  Array n Loops
+  <script>
+
+
+    function countWords(word){
+      const res = {};
+      
+      for (let i=0; i<word.length; i++){
+        const count = word[i];
+        if(!res[count]){
+          res[count] = 1;
+        }else{
+          res[count]++;
+        }
+      }
+      return res;
+    }
+
+    console.log(countWords(["Apple","Tea","Apple","Apple","Tea","Apple","Banana","Tea","Apple","Banana"]));
+
+    function countNum(no){
+      const out = {};
+      for(let j=0; j<no.length; j++){
+        const num = no[j];
+        if(!out[num]){
+          out[num] = 1;
+        }else {
+          out[num]++;
+        }
+      }
+      return out;
+    }
+    console.log(countNum([1,5,1,8,5,1,5,6,3,1,4,8,4,5,1,8,5,1,5,6,3,1,4,8,4,1,2,2,5,4,6,8,5,1,7,1,]));
+  </script>
+  
+</body>
+</html>
