@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #171738;
+}
+h1{
+  text-align: center;
+  color: aqua;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+.container{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #FFC100;
+  font-weight: bold;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
